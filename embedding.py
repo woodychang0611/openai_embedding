@@ -32,7 +32,6 @@ def search_reviews(df, product_description, n=3, pprint=True):
    res = df.sort_values('similarities', ascending=False).head(n)
    return res
 
-
 text = "OpenAI's GPT-4 is a powerful language model."
 embedding = get_embedding(text)
 print(embedding)
